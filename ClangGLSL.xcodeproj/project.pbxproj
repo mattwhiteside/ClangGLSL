@@ -13,6 +13,7 @@
 		C9A6B258175AC84800DEC98E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A6B257175AC84800DEC98E /* Cocoa.framework */; };
 		C9A6B25C175B912800DEC98E /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A6B25B175B912800DEC98E /* IOKit.framework */; };
 		C9A6B337175C13B900DEC98E /* libShaderCompilers-cpp98.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A6B334175C13A500DEC98E /* libShaderCompilers-cpp98.a */; };
+		C9A6B389175C1F0B00DEC98E /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A6B35A175C1DA000DEC98E /* libglfw3.a */; };
 		C9F8F0101747DC590056A73A /* ClangGLSL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9F8F0051747D9200056A73A /* ClangGLSL.cpp */; };
 		C9F8F0121747E3E80056A73A /* libLLVMSupport.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F8F0111747E3E80056A73A /* libLLVMSupport.a */; };
 		C9F8F0141747E57F0056A73A /* libclangFrontend.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F8F0131747E57F0056A73A /* libclangFrontend.a */; };
@@ -213,6 +214,13 @@
 			remoteGlobalIDString = 2833E8E550D544CB8708CE66;
 			remoteInfo = windows;
 		};
+		C9A6B387175C1EF600DEC98E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9A6B33B175C1D9900DEC98E /* GLFW.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 7548094A18F14DC78027539A;
+			remoteInfo = glfw;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -247,6 +255,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9A6B389175C1F0B00DEC98E /* libglfw3.a in Frameworks */,
 				C9A6B337175C13B900DEC98E /* libShaderCompilers-cpp98.a in Frameworks */,
 				C9A6B25C175B912800DEC98E /* IOKit.framework in Frameworks */,
 				C9A6B258175AC84800DEC98E /* Cocoa.framework in Frameworks */,
@@ -336,7 +345,6 @@
 		C9F8EFFE1747D8FD0056A73A = {
 			isa = PBXGroup;
 			children = (
-				C9A6B33B175C1D9900DEC98E /* GLFW.xcodeproj */,
 				C9A6B25B175B912800DEC98E /* IOKit.framework */,
 				C9A6B257175AC84800DEC98E /* Cocoa.framework */,
 				C9A4AD681753CE030079A1B5 /* GLSLClassGenerator.cpp */,
@@ -345,6 +353,7 @@
 				C9A4AD65175198C10079A1B5 /* lib */,
 				C9F8F00C1747DAE30056A73A /* Products */,
 				C9A6B320175C112D00DEC98E /* ShaderCompiler.xcodeproj */,
+				C9A6B33B175C1D9900DEC98E /* GLFW.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -381,6 +390,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				C9A6B388175C1EF600DEC98E /* PBXTargetDependency */,
 				C9A6B336175C13A900DEC98E /* PBXTargetDependency */,
 			);
 			name = ClangGLSL;
@@ -629,6 +639,11 @@
 			isa = PBXTargetDependency;
 			name = "ShaderCompilers-cpp98";
 			targetProxy = C9A6B335175C13A900DEC98E /* PBXContainerItemProxy */;
+		};
+		C9A6B388175C1EF600DEC98E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = glfw;
+			targetProxy = C9A6B387175C1EF600DEC98E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
