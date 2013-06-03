@@ -8,4 +8,6 @@
 5. Build your plugin.
 6. You are now ready to use your plugin.  To do this, go to your other OpenGL project containing shader programs, make sure you select the clang executable you built in step 1 as the compiler, and then pass the following compiler flags when compiling a file that references the in-memory 'virtual classes' for your shader programs:
 
-`-Xclang -load -Xclang /path/to/your/binary/libClangGLSL.dylib -Xclang -add-plugin -Xclang clang-glsl -Xclang -plugin-arg-clang-glsl -Xclang '/Users/matt/code/SomeOpenGLProj/shaders/FlatColor' -Xclang -plugin-arg-clang-glsl -Xclang '/Users/matt/code/SomeOpenGLProj/shaders/Wireframe'`
+`-Xclang -load -Xclang /path/to/your/binary/libClangGLSL.dylib -Xclang -add-plugin -Xclang clang-glsl 
+-Xclang -plugin-arg-clang-glsl -Xclang '/Users/matt/code/SomeOpenGLProj/shaders/FlatColor' 
+-Xclang -plugin-arg-clang-glsl -Xclang '/Users/matt/code/SomeOpenGLProj/shaders/Wireframe'`
