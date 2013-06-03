@@ -231,6 +231,7 @@
 		C9A6B25B175B912800DEC98E /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = DEVELOPER_DIR; };
 		C9A6B320175C112D00DEC98E /* ShaderCompiler.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ShaderCompiler.xcodeproj; path = ShaderCompilers/ShaderCompiler.xcodeproj; sourceTree = "<group>"; };
 		C9A6B33B175C1D9900DEC98E /* GLFW.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GLFW.xcodeproj; path = glfw/GLFW.xcodeproj; sourceTree = "<group>"; };
+		C9A6B38A175C206100DEC98E /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = readme.md; sourceTree = "<group>"; };
 		C9F8F0051747D9200056A73A /* ClangGLSL.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ClangGLSL.cpp; sourceTree = "<group>"; };
 		C9F8F00B1747DAE30056A73A /* libClangGLSL.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libClangGLSL.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9F8F0111747E3E80056A73A /* libLLVMSupport.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLLVMSupport.a; path = "../llvm-xcode/lib/Debug/libLLVMSupport.a"; sourceTree = "<group>"; };
@@ -345,6 +346,7 @@
 		C9F8EFFE1747D8FD0056A73A = {
 			isa = PBXGroup;
 			children = (
+				C9A6B38A175C206100DEC98E /* readme.md */,
 				C9A6B25B175B912800DEC98E /* IOKit.framework */,
 				C9A6B257175AC84800DEC98E /* Cocoa.framework */,
 				C9A4AD681753CE030079A1B5 /* GLSLClassGenerator.cpp */,
